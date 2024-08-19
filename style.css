@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Tahoma, sans-serif;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 80rem;
+    height: 100vh;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 1rem 0 1rem;
+}
+
+header img {
+    width: 250px;
+}
+
+header ul, footer ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header li, footer li{
+    width: 30px;
+    height: 30px;
+    background-color: aliceblue; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header i, footer i{
+    font-size: 1.5rem;
+    transition: color 0.3s; 
+}
+
+/*icon first*/
+header li:first-child , footer li:first-child{
+    border:1px solid rgb(70, 70, 255);
+}
+header li:first-child i, footer li:first-child i{
+    color: rgb(70, 70, 255);
+}
+header li:first-child:hover i, footer li:first-child:hover i{
+    color: aliceblue;
+}
+header li:first-child:hover, footer li:first-child:hover {
+    background-color: rgb(70, 70, 255); 
+}
+/*icon first*/
+
+/*icon two*/
+header li:nth-child(2), footer li:nth-child(2){
+    border:1px solid aqua;
+}
+header li:nth-child(2) i, footer li:nth-child(2) i{
+    color: aqua;
+}
+header li:nth-child(2):hover i , footer li:nth-child(2):hover i{
+    color: aliceblue;
+}
+header li:nth-child(2):hover, footer li:nth-child(2):hover{
+    background-color: aqua; 
+}
+/*icon two*/
+
+/*icon three*/
+header li:last-child, footer li:last-child{
+    border:1px solid peru;
+}
+header li:last-child i, footer li:last-child i{
+    color: peru;
+}
+header li:last-child:hover i, footer li:last-child:hover i{
+    color: aliceblue;
+}
+header li:last-child:hover, footer li:last-child:hover {
+    background-color: peru; 
+}
+/*icon three*/
+
+
+nav a {
+   color: aliceblue;
+   text-decoration: none;
+   font-size: 1.2rem;
+}
+
+nav ul {
+    background-color: #FF6361;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    padding: 0 1rem 0 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+nav li:hover {
+    background-color: #aa4543;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0 2rem 0;
+}
+
+.vinil img {
+    width: 200px;
+}
+
+.vinil {
+    margin-top: 1rem;
+    width: 200px;
+    height: 335px;
+    text-align: center;
+    position: relative;
+}
+
+.quick_view, .buy_my_shagy_buck {
+    position: absolute;
+    display: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    border: none;
+}
+
+.quick_view {
+    background-image: url(quick_view.jpg);
+    right: 35%;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 50px; 
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;   
+}
+
+.buy_my_shagy_buck {
+    top: 40%;
+    width: 100%;
+    height: 2rem;
+    transform: translateY(-50%);
+    background-color: #e55935;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.vinil:hover .quick_view,  .vinil:hover .buy_my_shagy_buck{
+    display: block;
+}
+
+.quick_view:hover, .buy_my_shagy_buck:hover{
+    opacity: 1;
+}
+
+.vinil button:first-of-type{
+    background-color:#FF6361;
+    color: aliceblue;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+.vinil button:last-of-type{
+    background-color:rgb(221, 228, 235);
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border: none;
+}
+
+.vinil p:last-of-type {
+    margin-top: 1rem;
+}
+
+.vinil button:first-of-type:hover, .vinil button:last-of-type:hover {
+    background-color:dimgrey;
+}
+
+.vinil button:first-of-type, .vinil button:last-of-type {
+    position: absolute;
+    bottom: 1px;
+}
+
+.vinil button:first-of-type {
+    left: 30%;
+}
+
+.vinil button:last-of-type {
+    left: 63%;
+}
+
+.vinil button:last-of-type:hover i{
+    color:hotpink;
+}
+
+
+.vinil p:last-of-type {
+    position: absolute;
+    bottom: 40px;
+    left: 35%;
+}
+
+.new {
+    position: absolute;
+    top: 0.6rem;
+    right: 0;
+    background-color: #FF6361;
+    color: aliceblue;
+    padding: 4px 4px;
+    width: 40px;
+}
+
+footer {
+    width: 100%;
+    padding-bottom: 7rem;
+}
+
+footer p {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    background-color: #FF6361;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+main-contact div {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+main-contact a {
+    text-decoration: none;
+    color: black;
+}
+
+main-contact a:hover {
+    text-decoration: underline;
+}
+
+main-dost, main-pol {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+main-dost h2, main-dost h3 {
+    font-weight: 400;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+main-dost p, main-pol p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main-dost ol, main-pol ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 1.1rem;
+}
+
+main-pol li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
